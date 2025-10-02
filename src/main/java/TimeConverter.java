@@ -1,5 +1,39 @@
+import java.util.Scanner;
+
 public class TimeConverter {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        boolean running = true;
+        while (running) {
+            System.out.println("\nConvert time to total seconds\n");
+            System.out.print("Enter Hours: ");
+            int hours = sc.nextInt();
+            System.out.print("Enter minutes: ");
+            int minutes = sc.nextInt();
+            System.out.print("Enter seconds: ");
+            int seconds = sc.nextInt();
+            int convertedhours = hours * 3600;
+            int convertedminutes = minutes * 60;
+            int total = convertedminutes + convertedhours + seconds;
+            System.out.println("\nTime Conversion:");
+            System.out.println("Input: " + hours + " hour, " + minutes + " minute, " + seconds + " second");
+            System.out.println("Total: " + total + " seconds");
+            System.out.println("\nCalculation: ");
+            System.out.println(hours + " hours x 3600 = " + convertedhours + " seconds");
+            System.out.println(minutes + " minutes x 60 = " + convertedminutes + " seconds");
+            System.out.println(seconds + " seconds = " + seconds + " seconds");
+            System.out.println("Total: " + total + " seconds");
+            System.out.println("");
+            System.out.print("Do you want to convert another time? (y/n): ");
+            String choice = sc.next();
+            if (choice == "y") {
+                running = true;
+            } else if (choice == "n")
+            {
+                System.out.println("Goodbye! ");
+                running = false;
+            }
+        }
         // TODO: Implement time converter
         // Requirements:
         // - Prompt for hours, minutes, and seconds
