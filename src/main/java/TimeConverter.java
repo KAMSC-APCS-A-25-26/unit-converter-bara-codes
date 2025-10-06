@@ -26,12 +26,15 @@ public class TimeConverter {
             System.out.println("");
             System.out.print("Do you want to convert another time? (y/n): ");
             String choice = sc.next();
-            if (choice == "y") {
-                running = true;
-            } else if (choice == "n")
-            {
-                System.out.println("Goodbye! ");
-                running = false;
+            switch (choice) {
+                case "y":
+                    running = true;
+                    break;
+
+                case "n":
+                    System.out.println("Goodbye!");
+                    running = false;
+                    break;
             }
         }
         // TODO: Implement time converter

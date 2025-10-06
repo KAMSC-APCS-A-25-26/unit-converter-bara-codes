@@ -29,6 +29,7 @@ public class TempConverter {
                 case 3:
                     System.out.println("Goodbye!");
                     running = false;
+                    break;
 
                 default:
                     System.out.println("Invalid input. Please enter 1 to convert Fahrenheit to Celsius, 2 to convert Celsius to Fahrenheit, or 3 to exit: ");
