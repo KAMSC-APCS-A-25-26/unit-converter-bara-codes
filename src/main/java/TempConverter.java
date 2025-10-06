@@ -4,25 +4,29 @@ public class TempConverter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         boolean running = true;
-        while (running)
-        {
-            System.out.println("\n---Temperature Converter Menu---\n1. Convert Fahrenheit to Celsius\n2. Convert Celsius to Fahrenheit\n3. Exit");
-            System.out.print("Enter your choice: ");
+        while (running){
+
+            System.out.println("\nChoose Conversion Direction: \n1. Convert Fahrenheit to Celsius\n2. Convert Celsius to Fahrenheit\n3. Exit");
+            System.out.print("\nEnter your choice: ");
             int choice = sc.nextInt();
 
             switch (choice)
             {
                 case 1:
-                    System.out.print("Fahrenheit: ");
+                    System.out.print("Enter temperature in Fahrenheit: ");
                     double f = sc.nextDouble();
-                    double ftoc = f-32 * 5/9;
+                    double ftoc = (f-32) * 5/9;
+                    System.out.println("\nConversion Results: ");
+                    System.out.println("Fahrenheit: " + f);
                     System.out.println("Celsius: " + ftoc);
                     break;
 
                 case 2:
-                    System.out.print("Celsius: ");
+                    System.out.print("Enter temperature in Celsius: ");
                     double c = sc.nextDouble();
                     double ctof = c * 9/5 + 32;
+                    System.out.println("\nConversion Results: ");
+                    System.out.println("Celsius: " + c);
                     System.out.println("Fahrenheit: " + ctof);
                     break;
 

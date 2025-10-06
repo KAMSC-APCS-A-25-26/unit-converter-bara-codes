@@ -17,12 +17,12 @@ public class TimeConverter {
             int total = convertedminutes + convertedhours + seconds;
             System.out.println("\nTime Conversion:");
             System.out.println("Input: " + hours + " hour, " + minutes + " minute, " + seconds + " second");
-            System.out.println("Total: " + total + " seconds");
+            System.out.println("Total: " + total + " second");
             System.out.println("\nCalculation: ");
-            System.out.println(hours + " hours x 3600 = " + convertedhours + " seconds");
-            System.out.println(minutes + " minutes x 60 = " + convertedminutes + " seconds");
-            System.out.println(seconds + " seconds = " + seconds + " seconds");
-            System.out.println("Total: " + total + " seconds");
+            System.out.println(hours + " hours x 3600 = " + convertedhours + " second");
+            System.out.println(minutes + " minutes x 60 = " + convertedminutes + " second");
+            System.out.println(seconds + " second = " + seconds + " second");
+            System.out.println("Total: " + total + " second");
             System.out.println("");
             System.out.print("Do you want to convert another time? (y/n): ");
             String choice = sc.next();

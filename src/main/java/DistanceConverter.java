@@ -6,19 +6,24 @@ public class DistanceConverter {
         boolean running = true;
         while (running) {
             System.out.println("\n---Distance Converter Menu---\n1. Convert Miles to Kilometers\n2. Convert Kilometers to Miles\n3. Exit");
+            System.out.print("\nEnter your choice: ");
             int choice = sc.nextInt();
             switch (choice) {
                 case 1:
-                    System.out.print("Miles: ");
+                    System.out.print("Enter distance in Miles: ");
                     double miles = sc.nextDouble();
                     double mtok = miles * 1.60935;
+                    System.out.println("\nConversion Results: ");
+                    System.out.println("Miles: " + miles);
                     System.out.println("Kilometers: " + mtok);
                     break;
 
                 case 2:
-                    System.out.print("Kilometers: ");
+                    System.out.print("Enter distance in Kilometers: ");
                     double kilo = sc.nextDouble();
                     double ktom = kilo / 1.60935;
+                    System.out.println("\nConversion Results: ");
+                    System.out.println("Kilometers: " + kilo);
                     System.out.println("Miles: " + ktom);
                     break;
 
